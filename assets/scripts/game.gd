@@ -16,6 +16,11 @@ func count_score():
 
 func game_over():
 	state = game_state.STOPED
+	save_data.last_score = score
+	
+	if score > save_data.best_score:
+		save_data.best_score = score
+		
 	$spawn_pipes/timer.stop()
 	$music.stop()
 	$mario.die()

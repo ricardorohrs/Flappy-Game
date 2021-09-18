@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="Godot"
-run/main_scene="res://assets/scenes/menu.tscn"
+run/main_scene="res://assets/scenes/splash.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+save_data="*res://assets/scripts/save_data.gd"
 
 [display]
 

@@ -21,7 +21,7 @@ func flap():
 
 func _input(event):
 	if is_alive:
-		if event.is_action_pressed("ui_touch"):
+		if event.is_action_pressed("ui_touch") || event.is_action_pressed("ui_select"):
 			flap()
 
 func die():
